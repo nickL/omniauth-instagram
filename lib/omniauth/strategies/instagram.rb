@@ -26,6 +26,11 @@ module OmniAuth
           'website'  => raw_info['website'],
         }
       end
+      extra do
+        {
+          'raw_info' => raw_info
+        }
+      end
 
       def raw_info
         @data ||= access_token.params["user"]
