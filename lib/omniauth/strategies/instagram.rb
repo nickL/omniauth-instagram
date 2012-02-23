@@ -28,7 +28,7 @@ module OmniAuth
       end
       extra do
         {
-          'raw_info' => raw_info
+          'raw_info' => params
         }
       end
 
